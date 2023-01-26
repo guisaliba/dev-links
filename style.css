@@ -45,7 +45,7 @@ body {
   border-radius: 15px;
 
   width: 100%;
-  max-width: 588px;
+  max-width: 500px;
   height: 712px;
 
   padding: 24px;
@@ -98,11 +98,16 @@ body {
   left: 0;
 
   transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  left: initial;
-  right: 0;
+  animation: slide-toggle 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 6px solid var(--highlight-color);
 }
 
 #switch span {
@@ -220,5 +225,23 @@ footer a:visited {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes slide-toggle {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
