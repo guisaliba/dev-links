@@ -19,7 +19,7 @@
 <br>
 
 <p align="center">
-  <img alt="aperturewallet" src="./assets/devlinks-dark.png width="100%">
+  <img alt="aperturewallet" src="./assets/devlinks-dark.png" width="100%">
 </p>
 <p align="center">
   <img alt="aperturewallet" src="./assets/devlinks-light.png" width="100%">
