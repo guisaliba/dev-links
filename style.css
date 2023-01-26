@@ -13,19 +13,18 @@
   --highlight-color: rgba(255, 255, 255, 0.2);
   --visited-color: #f56653;
   --switch-bg-url: url(./assets/moon-stars.svg);
-  --profile-img: url(./assets/default-profile-img.png);
+  --profile-img: url(./assets/profile-img.png);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/light-bg-mobile.png);
+  --bg-url: url(./assets/bg-mobile-light.png);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --visited-color: #f56653;
   --switch-bg-url: url(./assets/sun.svg);
-  --profile-img: url(./assets/light-profile-img.jpg);
 }
 
 body {
@@ -212,4 +211,14 @@ footer a:link {
 
 footer a:visited {
   color: var(--visited-color);
+}
+
+@media (min-width: 650px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
